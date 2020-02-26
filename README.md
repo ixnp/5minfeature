@@ -19,28 +19,23 @@
 [  ] Create and verify associations 
 
 # Orchestra: name, classification, conductor_id
-Associations  
-	bas many members through OrchestraMember
-	belongs to  conductor 
+- has many members through OrchestraMember
+- belongs to  conductor 
 	
 # OrchestraMember: orchestra_id, member_id
-	Associations
-		belongs to  Orchestra
-		belongs to  member
+- belongs to  Orchestra
+- belongs to  member
 	
 
 # Member: name
-	Associations
-		has_many Orchestras through OrchestraMember
-        has_many instruments
+- has_many Orchestras through OrchestraMember
+- has_many instruments
 
 # Conductor: name
-	Associations
-		has many orchestras
+- has many orchestras
 
 # Instrument:  classification, member_id
-	Associations
-		belongs to a member 
+- belongs to a member 
 
 
 # Routes
