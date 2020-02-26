@@ -1,0 +1,3 @@
+class OrchestrasController < ApplicationController
+
+end
